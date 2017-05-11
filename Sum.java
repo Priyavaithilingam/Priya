@@ -14,6 +14,7 @@ class Sum
     s+=a%10;
     a=a/10;
   }
+  System.out.println(s);
   if(s<10)
   {
     s1=Integer.toString(s);
@@ -29,11 +30,11 @@ class Sum
   String s2=sb.toString();
   if(s1.equals(s2))
   {
-    System.out.println("Is Palindrom");
+    System.out.println("Is Palindrome");
   }
   else
  {
-   System.out.println("Is not palindrom");
+   System.out.println("Is not palindrome");
  }
 
 }
