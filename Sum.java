@@ -14,27 +14,18 @@ class Sum
     s+=a%10;
     a=a/10;
   }
-  System.out.println(s);
-  if(s<10)
-  {
-    s1=Integer.toString(s);
-    sb.append("0");
-    sb.append(s1);
-  }
-  else
- {
-   s1=Integer.toString(s);
-    sb.append(s1);
- }
+  
+  s1=Integer.toString(s);
+  sb.append(s1);
   sb.reverse();
   String s2=sb.toString();
   if(s1.equals(s2))
   {
-    System.out.println("Is Palindrome");
+    System.out.println("Is Palindrom");
   }
   else
  {
-   System.out.println("Is not palindrome");
+   System.out.println("Is not palindrom");
  }
 
 }
