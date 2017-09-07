@@ -2,26 +2,21 @@ import java.io.*;
 import java.util.*;
 class Reverse
 {
-public static void main(String args[])
-{
- Scanner sc=new Scanner(System.in);
- StringBuffer sb=new StringBuffer();
- String s1=sc.nextLine();
- sb.append(s1);
- sb=sb.reverse();
- System.out.println(sb);
- char[] a={'a','e','i','o','u'};
- int i,j;
- for(i=0;i<sb.length();i++)
- {
-   for(j=0;j<a.length;j++)
-   {
-      if(sb.charAt(i)==a[j])
-      {
-        sb.deleteCharAt(i);
-      }
-   }
+  public static void main(String args[])
+  {
+    Scanner sc=new Scanner(System.in);
+    StringBuilder sb1=new StringBuilder();
+    int i;
+    String s1=sc.nextLine();
+    String[] s2=s1.split(" ");
+    for(i=s2.length;i>0;i--)
+    {
+      sb1.append(s2[i-1]);
+      sb1.append(" ");
+    }
+    System.out.println(sb1);
+    
+  }
 }
-System.out.println(sb);
-}
-}
+    
+    
